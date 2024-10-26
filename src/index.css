@@ -1,13 +1,57 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
 }
+.nav-menu{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu li{
+  margin: 0 20px;
+}
+.nav-menu li a{
+  text-decoration: none;
+  color: #fff;
+}
+.nav-menu-mobile li{
+  margin-top: 20px;
+}
+.nav-menu-mobile li a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #000;
+}
+.home{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headerConatiner{
+  width: auto;
+  margin-left: 30px;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+.home .headerConatiner h1{justify-content: center;align-items: center;font-weight: bold;font-size: 70px;}
+.home .headerConatiner p {margin-top: 15px;padding: 0;font-size: 40px;color: #000;font-weight: lighter;}
+.home .headerConatiner button{color: #fff;margin: 20px;border: none;border-radius: 5px;cursor: pointer;
+  height: 50px;width: 150px;text-decoration: none;background-color: #121619;font-size: 20px;}
+  .home .headerConatiner button:hover{background-color: #07090a;cursor: pointer;transition: 0.3s ease-in;}
+
+  @media screen and (max-width: 768px) {
+    .home{justify-content: center;align-items: center;}
+    .home .headerConatiner{margin-left: 0;border-radius: 10px;display: flex;justify-content: center;align-items: center;
+    flex-direction: column;color: #fff;background-color: #121619;width: 80%;}
+    .home .headerConatiner h1{font-size: 40px;height: 30px;margin: 15px 0;color: #fff;}
+    .home .headerConatiner p{font-size: 30px;color: #fff;}
+    .home .headerConatiner button{background-color: #fff;color: #121619;margin-bottom: 30px;}
+
+  }
